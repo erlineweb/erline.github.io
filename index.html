@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Erline Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="source/w3.css">
+<link rel="stylesheet" href="source/css.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+</head><body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left w3-text-white w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>ERLINE'S<br>WEBSITE</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#ukay" onclick="w3_close()" class="w3-bar-item w3-button">JADE UKAY UKAY</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">ERLINE VILASIS</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-white w3-center w3-text-black w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="source/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="320" height="370">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Erline Vilasis</h4>
+      <p>Bilang isang OFW ay mahirap maging malayo sa aking pamilya kaya
+naisipan kong mag extra income habang nasa abroad, at ito ang aking napiling
+ukay buisness hanggang sa maka uwi ako sa pilipinas at ito ay aking ipinagpapatuloy
+hanggang ngayon.
+      </p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Personal Skills</h4>
+      <p class="w3-wide">Fashion</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-padding-small w3-center  w3-text-white w3-pink" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">Cleaning</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-padding-small w3-center w3-text-white w3-blue" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Cooking</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-padding-small w3-center w3-text-white w3-orange" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Selling</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-padding-small w3-center w3-text-white w3-green" style="width:80%">80%</div>
+      </div>
+    </div>
+  </div>
+  <h4></h4>
+
+
+  <!-- shop section -->
+  <div class="w3-container w3-white w3-padding-32 w3-text-black w3-padding-large" id="ukay">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>JADE UKAY UKAY</b></h4>
+      <p>Welcome sa jade ukay-ukay kung saan dito mo makikita ang mga uri ng mga damit na aking binebenta! kaya ano pa hinihintay mo bumili ka na!</p>
+      <hr class="w3-opacity">
+
+		 <div class="card w3-half w3-grey">
+		  <img src="source/shop/sheets.gif" alt="bed sheets" style="width:99.3%">
+		  <h1>Bed Sheet's</h1>
+		  <p class="price">₱50 - ₱100</p>
+		</div>
+
+		 <div class="card w3-half w3-grey">
+		  <img src="source/shop/girl.gif" alt="girls-wear" style="width:100%">
+		  <h1>Girl's Wear</h1>
+		  <p class="price">₱35 - ₱50</p>
+		</div>
+
+		 <div class="card w3-half w3-grey">
+		  <img src="source/shop/pants.gif" alt="shorts" style="width:100%">
+		  <h1>Short/Long Pant's</h1>
+		  <p class="price">₱30/short - ₱50/long</p>
+		</div> 
+
+		 <div class="card w3-half w3-grey">
+		  <img src="source/shop/sandals.gif" alt="sandals" style="width:100%">
+		  <h1>Women Sandal's</h1>
+		  <p class="price">₱200</p>
+		</div>
+      </div>
+    </div>
+  <h4></h4>
+
+
+  <!-- Contact section -->
+    <div class="w3-container w3-center w3-white w3-padding-32 w3-padding-large" id="contact">
+	<div class="w3-content " style="max-width:600px" >
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>You want to Message me or Buy something in my Shop here's my Contacts.</p>
+		<a href="https://web.facebook.com/erline873/?_rdc=1&_rdr" class="fa fa-facebook"></a>
+		<a class="fa fa-google" onclick="gmail()"></a>
+		<a class="fa fa-whatsapp" onclick="whatsapp()"></a>
+    </div>
+    </div>
+  <h4></h4>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://mokuken.github.io/" title="Moku Ken" target="_blank" class="w3-hover-opacity">Moku-Ken</a></div>
+
+
+<!-- gmail copy to clipboard script -->
+<input class="w3-hide" value="erlinevillasis@gmail.com" id="email" style="width:25%">
+<script>
+function gmail() {
+  /* Get the text field */
+  var copyText = document.getElementById("email");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+  
+  /* Alert the copied text */
+  alert("Gmail Copied: " + copyText.value);
+}
+</script>
+
+<!-- whatsapp copy to clipboard script -->
+<input class="w3-hide" value="09285911963" id="number" style="width:25%">
+<script>
+function whatsapp() {
+  /* Get the text field */
+  var copyText = document.getElementById("number");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+  
+  /* Alert the copied text */
+  alert("WhatsApp Number Copied: " + copyText.value);
+}
+</script>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+
+</body></html>
